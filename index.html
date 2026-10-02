@@ -1,0 +1,699 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Alamanga Reforestation – une forêt plantée à Madagascar depuis 2010</title><meta name="description" content="Alamanga Reforestation reboise 100 hectares de savane près d'Ambalavao, Madagascar, depuis 2010. Parrainage d'arbres pour particuliers et entreprises, miel, accompagnement de projets."><link rel="icon" href="img/logo.png"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Inspiré de la plaquette 2013 : fond gris papier, panneaux blancs, titres condensés en capitales sur deux tons (gris / vert feuille), photos rondes, bulles de tarifs */
+:root{
+  --paper:#ECEBE6; --card:#FBFBF8; --ink:#3A3C38; --ink-soft:#63665F; --rule:#D6D5CD;
+  --leaf:#6F9A2A; --leaf-fill:#86B13A; --on-leaf:#FFFFFF; --bubble:#8C8E87; --earth:#6B4423;
+  --tbc-bg:#F4D98A; --tbc-fg:#5A3A00;
+  --laterite:var(--earth); --forest:var(--leaf);
+  --f-head:"Barlow Condensed","DIN Condensed","Arial Narrow",sans-serif;
+  --f-text:"Barlow","Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(16px,4vw,44px); --r:18px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#191C18; --card:#232720; --ink:#E6E7E0; --ink-soft:#AAADA3; --rule:#3A3F37;
+  --leaf:#A3CC5C; --leaf-fill:#6F9A2A; --on-leaf:#FFFFFF; --bubble:#5D6058; --earth:#C8935F;
+  --tbc-bg:#5A4210; --tbc-fg:#FFE3A3; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#191C18; --card:#232720; --ink:#E6E7E0; --ink-soft:#AAADA3; --rule:#3A3F37;
+  --leaf:#A3CC5C; --leaf-fill:#6F9A2A; --on-leaf:#FFFFFF; --bubble:#5D6058; --earth:#C8935F;
+  --tbc-bg:#5A4210; --tbc-fg:#FFE3A3; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-text);font-size:1.0625rem;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--leaf)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--leaf);outline-offset:2px}
+p{margin:0}
+.wrap{max-width:74rem;margin-inline:auto;padding-inline:var(--gutter)}
+.tbc{display:inline-block;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;background:var(--tbc-bg);color:var(--tbc-fg);padding:.05em .45em;border-radius:3px;vertical-align:.15em;white-space:nowrap;margin-inline:.2em}
+
+/* Titres deux tons, comme la plaquette */
+.t{font-family:var(--f-head);text-transform:uppercase;font-weight:600;line-height:.98;letter-spacing:.005em;margin:0;font-size:clamp(2.1rem,5.4vw,3.4rem);color:var(--ink);text-wrap:balance}
+.t .g{display:block;color:var(--leaf)}
+.t.sm{font-size:clamp(1.6rem,3.6vw,2.2rem)}
+.kicker{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.08em;font-weight:600;font-size:.95rem;color:var(--leaf)}
+.card{background:var(--card);border-radius:var(--r);padding:clamp(1.3rem,3.5vw,2.4rem)}
+.cap{font-size:.8rem;color:var(--ink-soft);margin-top:.45rem;line-height:1.4}
+section{padding-block:clamp(2.6rem,7vw,5rem)}
+
+/* En-tête */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--card);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:1rem;padding-block:.5rem}
+.top .logo{width:120px;flex:none}
+:root[data-theme="dark"] .top .logo{background:#F3F2EE;border-radius:8px;padding:2px 6px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .top .logo{background:#F3F2EE;border-radius:8px;padding:2px 6px}}
+.top nav{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.top nav::-webkit-scrollbar{display:none}
+.top ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0;white-space:nowrap;justify-content:flex-end}
+.top a{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.06em;font-weight:600;font-size:.95rem;text-decoration:none;color:var(--ink-soft)}
+.top a:hover{color:var(--ink)}
+.top a.cta{color:var(--on-leaf);background:var(--leaf-fill);padding:.3rem .8rem;border-radius:99px}
+@media (max-width:720px){.top .wrap{flex-wrap:wrap;gap:.3rem}.top nav{flex-basis:100%}.top ul{justify-content:flex-start}}
+
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.btn{display:inline-block;font-family:var(--f-head);text-transform:uppercase;letter-spacing:.06em;font-weight:600;font-size:1rem;padding:.7rem 1.3rem;border-radius:99px;border:2px solid var(--leaf-fill);color:var(--leaf);background:transparent;text-decoration:none;cursor:pointer;line-height:1.2}
+.btn.solid{background:var(--leaf-fill);color:var(--on-leaf)}
+.btn:hover{filter:brightness(1.06)}
+
+/* Ouverture : grande photo, panneau blanc à droite (page 1 de la plaquette) */
+.hero{position:relative;padding-top:clamp(1rem,3vw,2rem)}
+.hero-img{width:100%;aspect-ratio:16/8;object-fit:cover;border-radius:var(--r)}
+.hero .card{position:relative;margin:-7rem 0 0 auto;max-width:34rem;box-shadow:0 1px 0 var(--rule)}
+.hero .bul{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.35rem}
+.hero .bul li{padding-left:1.1rem;position:relative;font-weight:500}
+.hero .bul li::before{content:"";position:absolute;left:0;top:.62em;width:.45rem;height:.45rem;border-radius:50%;background:var(--leaf-fill)}
+.hero .lede{margin-top:1rem}
+.hero .lede b{color:var(--leaf);font-weight:600}
+@media (max-width:720px){.hero-img{aspect-ratio:4/3}.hero .card{margin:-3rem .6rem 0}}
+
+.name{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:2rem;align-items:center}
+.name p.big{font-size:1.3rem;line-height:1.45}
+.name p.big i{color:var(--leaf);font-style:normal;font-weight:600}
+@media (max-width:720px){.name{grid-template-columns:1fr;gap:.8rem}}
+
+/* Lieu */
+.sat{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:1.2rem;align-items:end;margin-top:1.8rem}
+.sat img{width:100%;border-radius:var(--r)}
+@media (max-width:720px){.sat{grid-template-columns:1fr}}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.5rem}
+.facts div{background:var(--card);border-radius:14px;padding:1rem 1.1rem}
+.facts dt{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.06em;font-weight:600;color:var(--leaf);font-size:.95rem}
+.facts dd{margin:.2rem 0 0;font-size:.98rem}
+@media (max-width:820px){.facts{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.facts{grid-template-columns:1fr}}
+.facts dl{display:contents}
+.map{margin-top:1.5rem;padding:1rem;overflow-x:auto}
+.map svg{width:100%;min-width:560px;height:auto;display:block}
+.map text{font-family:var(--f-text);font-size:13px;fill:var(--ink)}
+.map .soft{fill:var(--ink-soft)}
+
+.cmp-box{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1400/1225;max-width:100%;touch-action:pan-y;user-select:none}
+.cmp-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cmp-box .before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.cmp-box .bar{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:#fff;pointer-events:none}
+.cmp-box .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:2.8rem;height:2.8rem;border-radius:50%;background:var(--leaf-fill);color:#fff;display:grid;place-items:center;font-size:.8rem;letter-spacing:.1em;border:3px solid #fff}
+.cmp-box input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0;padding:0;border:0}
+.cmp-box input:focus-visible ~ .bar,.cmp-box input:focus-visible{outline:none}
+.cmp-box:focus-within .knob{outline:3px solid var(--leaf);outline-offset:2px}
+.cmp-box .tag{position:absolute;top:.8rem;font-family:var(--f-head);text-transform:uppercase;font-weight:600;letter-spacing:.06em;font-size:.95rem;color:#fff;background:rgba(30,32,28,.62);padding:.2rem .6rem;border-radius:99px;pointer-events:none}
+.cmp-box .tag.l{left:.8rem}.cmp-box .tag.r{right:.8rem}
+/* Modèle : photos rondes */
+.model{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:2.5rem;align-items:center}
+.rounds{position:relative;aspect-ratio:1;max-width:30rem;width:100%}
+.rounds img{position:absolute;border-radius:50%;object-fit:cover;border:5px solid var(--card)}
+.rounds .a{width:62%;aspect-ratio:1;right:0;top:12%}
+.rounds .b{width:40%;aspect-ratio:1;left:0;top:0}
+.rounds .c{width:44%;aspect-ratio:1;left:8%;bottom:0}
+.quote{font-family:var(--f-head);text-transform:uppercase;font-weight:600;font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.08}
+.quote em{font-style:normal;color:var(--leaf)}
+.triad{display:grid;gap:.9rem;margin-top:1.4rem}
+.triad div{display:grid;grid-template-columns:3.2rem minmax(0,1fr);gap:1rem;align-items:center}
+.triad b{width:3.2rem;height:3.2rem;border-radius:50%;background:var(--leaf-fill);color:var(--on-leaf);display:grid;place-items:center;font-family:var(--f-head);text-transform:uppercase;font-size:.72rem;letter-spacing:.04em;text-align:center;line-height:1}
+@media (max-width:720px){.model{grid-template-columns:1fr}.rounds{max-width:22rem;margin-inline:auto}}
+
+/* Frise */
+.frise{list-style:none;margin:1.8rem 0 0;padding:0;position:relative;display:grid;gap:0}
+.frise::before{content:"";position:absolute;left:6.6rem;top:.6rem;bottom:.6rem;width:3px;background:var(--leaf-fill);opacity:.35;border-radius:2px}
+.frise li{display:grid;grid-template-columns:5.6rem minmax(0,1fr);gap:2rem;padding-block:.75rem;position:relative}
+.frise li::after{content:"";position:absolute;left:6.25rem;top:1.15rem;width:13px;height:13px;border-radius:50%;background:var(--card);border:3px solid var(--leaf-fill)}
+.frise li.now::after{background:var(--leaf-fill)}
+.frise time{font-family:var(--f-head);text-transform:uppercase;font-weight:600;color:var(--leaf);text-align:right;font-size:1.05rem;padding-top:.05rem}
+.frise p{max-width:38rem}
+.frise small{display:block;color:var(--ink-soft);font-size:.8rem}
+@media (max-width:560px){.frise::before{left:.45rem}.frise li{grid-template-columns:1fr;gap:.1rem;padding-left:1.8rem}.frise li::after{left:0}.frise time{text-align:left}}
+.frise-pics{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.8rem}
+.frise-pics img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+@media (max-width:560px){.frise-pics{grid-template-columns:1fr}}
+
+.letter{max-width:42rem;margin-inline:auto;display:grid;gap:1rem;font-size:1.1rem}
+.sig{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:.4rem}
+.sig img{width:150px}
+:root[data-theme="dark"] .sig img{filter:invert(1)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sig img{filter:invert(1)}}
+
+/* Parrainage */
+.par-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem;align-items:center}
+.cluster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;align-items:center}
+.cluster img{border-radius:50%;aspect-ratio:1;object-fit:cover;width:100%}
+.cluster img:nth-child(2){transform:translateY(-1.2rem)}
+@media (max-width:720px){.par-head{grid-template-columns:1fr}}
+.entries{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+.entries .card{display:grid;gap:.7rem;align-content:start}
+@media (max-width:720px){.entries{grid-template-columns:1fr}}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+@media (max-width:720px){.two{grid-template-columns:1fr}}
+.ticks{list-style:none;margin:.8rem 0 0;padding:0;display:grid;gap:.5rem}
+.ticks li{padding-left:1.6rem;position:relative}
+.ticks li::before{content:"→";position:absolute;left:0;color:var(--leaf);font-weight:600}
+.h3{font-family:var(--f-head);text-transform:uppercase;font-weight:600;font-size:1.35rem;margin:0;line-height:1.1}
+
+/* Grille de tarifs en bulles (page 3 de la plaquette) */
+.prices{margin-top:1rem;overflow-x:auto}
+.prices ol{list-style:none;margin:0;padding:.4rem 0 .6rem;display:grid;grid-template-columns:repeat(5,minmax(4.6rem,1fr));gap:1.4rem .6rem}
+.prices li{display:grid;justify-items:center;gap:.35rem;text-align:center}
+.bub{width:4.4rem;height:4.4rem;border-radius:50%;display:grid;place-items:center;font-family:var(--f-head);font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.bub.n{background:var(--bubble);color:#fff;font-size:1.05rem}
+.bub.p{background:var(--leaf-fill);color:var(--on-leaf);font-size:1.2rem}
+.bub.p small{display:block;font-size:.62rem;font-weight:500;letter-spacing:.04em;margin-top:.15rem}
+.arrow{color:var(--leaf);font-weight:700;line-height:1}
+.tot{font-size:.78rem;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.legend{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.85rem;color:var(--ink-soft);margin-top:.4rem}
+.legend span::before{content:"";display:inline-block;width:.75rem;height:.75rem;border-radius:50%;margin-right:.35rem;vertical-align:-.05em;background:var(--bubble)}
+.legend span.p::before{background:var(--leaf-fill)}
+@media (max-width:560px){.prices ol{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Formulaires */
+.form{display:grid;gap:1rem;max-width:36rem;margin-top:1rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:520px){.row{grid-template-columns:1fr}}
+label{display:grid;gap:.3rem;font-family:var(--f-head);text-transform:uppercase;letter-spacing:.06em;font-weight:600;font-size:.85rem;color:var(--ink-soft)}
+input,select,textarea{font:inherit;font-family:var(--f-text);font-size:1rem;text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:.65rem .75rem;width:100%;min-width:0}
+textarea{min-height:6rem;resize:vertical}
+fieldset{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.6rem 1.4rem}
+legend{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.06em;font-weight:600;font-size:.85rem;color:var(--ink-soft);margin-bottom:.5rem;padding:0}
+.radio{display:flex;align-items:center;gap:.45rem;font-family:var(--f-text);text-transform:none;letter-spacing:0;font-weight:400;font-size:1rem;color:var(--ink)}
+.radio input{width:auto;accent-color:var(--leaf-fill)}
+.gift[hidden]{display:none!important}
+.estimate{color:var(--leaf);font-weight:600;font-variant-numeric:tabular-nums}
+.out{border:2px solid var(--leaf-fill);border-radius:14px;padding:1rem;display:grid;gap:.8rem;background:var(--card)}
+.out[hidden]{display:none!important}
+.out pre{white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,Menlo,monospace;font-size:.8rem;margin:0;background:var(--paper);padding:.8rem;border-radius:8px;max-height:16rem;overflow:auto}
+.out p{font-size:.92rem}
+.note{font-size:.88rem;color:var(--ink-soft)}
+
+/* Pourquoi vous engager : bulles (page 2 de la plaquette) */
+.why{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:1.8rem;max-width:40rem}
+.why > *{aspect-ratio:1;border-radius:50%;width:100%;display:grid;place-items:center;text-align:center;padding:.6rem;font-family:var(--f-head);text-transform:uppercase;font-weight:600;font-size:clamp(.78rem,1.9vw,1rem);line-height:1.05}
+.why img{object-fit:cover;padding:0}
+.why .gb{background:var(--leaf-fill);color:var(--on-leaf)}
+.why .wb{background:var(--card);color:var(--ink)}
+@media (max-width:520px){.why{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ent{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem;align-items:start}
+@media (max-width:820px){.ent{grid-template-columns:1fr}}
+
+.co2{margin-top:1.4rem;font-size:.95rem;display:grid;gap:.5rem;border-left:4px solid var(--leaf-fill)}
+
+.ann{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:2rem;align-items:center}
+.ann .pic{border-radius:50%;aspect-ratio:1;object-fit:cover;width:100%;max-width:24rem;justify-self:center}
+.ann .prose{display:grid;gap:.9rem}
+@media (max-width:720px){.ann{grid-template-columns:1fr}.ann .pic{max-width:16rem}}
+.soon{display:inline-block;font-family:var(--f-head);text-transform:uppercase;letter-spacing:.08em;font-weight:600;color:var(--earth);border:2px solid var(--earth);padding:.15rem .6rem;border-radius:99px;justify-self:start}
+
+.partners{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.4rem}
+.partners .card{padding:1.1rem 1.2rem}
+.partners b{font-family:var(--f-head);text-transform:uppercase;font-size:1.2rem;font-weight:600;display:block}
+.partners span{font-size:.92rem;color:var(--ink-soft)}
+@media (max-width:720px){.partners{grid-template-columns:1fr}}
+
+.contact{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:1.5rem}
+@media (max-width:720px){.contact{grid-template-columns:1fr}}
+.direct{display:grid;gap:1.1rem;align-content:start}
+.direct div{display:grid;gap:.15rem}
+.direct .v{font-size:1.15rem;font-weight:600;user-select:all;word-break:break-all}
+.copy{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.06em;font-size:.8rem;background:none;border:1px solid var(--rule);color:var(--ink-soft);padding:.2rem .6rem;border-radius:99px;cursor:pointer;justify-self:start}
+
+footer{padding-block:2.5rem 3.5rem;text-align:center;font-size:.85rem;color:var(--ink-soft)}
+footer .logo{width:150px;margin:0 auto 1rem}
+:root[data-theme="dark"] footer .logo{background:#F3F2EE;border-radius:10px;padding:4px 8px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) footer .logo{background:#F3F2EE;border-radius:10px;padding:4px 8px}}
+footer p{max-width:44rem;margin:.4rem auto 0}
+footer a{color:var(--leaf);font-weight:600;text-decoration:none}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#haut" aria-label="Alamanga Reforestation, retour en haut"><img class="logo" src="img/logo.png" alt="Alamanga reforestation" width="600" height="261"></a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#lieu">Le lieu</a></li>
+        <li><a href="#histoire">Histoire</a></li>
+        <li><a href="#entreprises">Entreprises</a></li>
+        <li><a href="#miel">Miel</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="cta" href="#parrainer">Parrainer</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="haut">
+  <div class="hero wrap">
+    <img class="hero-img" src="img/hero.jpg" alt="Bosquets plantés au premier plan, savane et montagnes des hauts-plateaux au fond" width="1600" height="1066" fetchpriority="high">
+    <div class="card">
+      <h1 class="t">Une forêt plantée<span class="g">à Madagascar depuis 2010</span></h1>
+      <p class="lede"><b>Alamanga Reforestation</b> reboise une colline de savane des hauts-plateaux, à 12 km à l'est d'Ambalavao. Nous lions préservation de l'environnement et développement local, avec les familles qui vivent autour.</p>
+      <ul class="bul">
+        <li>100 hectares plantés</li>
+        <li>30 ruches colonisées par des essaims sauvages</li>
+        <li>Un seul lieu : 21°53'19,91" S – 46°55'22,39" E</li>
+      </ul>
+      <div class="btns">
+        <a class="btn solid" href="#parrainer">Parrainer des arbres</a>
+        <a class="btn" href="#lieu">La forêt vue du ciel</a>
+      </div>
+    </div>
+    <p class="cap">Hauts-plateaux autour de la plantation, Vohimarina, avril 2017. Photo Gaëlle</p>
+  </div>
+
+  <section class="wrap" aria-label="Le nom">
+    <div class="name">
+      <h2 class="t sm">Alamanga<span class="g">forêt bleue, forêt sacrée</span></h2>
+      <p class="big">En malgache, <i>alamanga</i> veut dire « forêt bleue » ou « forêt sacrée ». Une structure malgache créée en 2010 par Marie-Nomena Allimant, rentrée à Madagascar en septembre 2009.</p>
+    </div>
+  </section>
+
+  <section id="lieu" class="wrap">
+    <h2 class="t">La forêt<span class="g">vue du ciel</span></h2>
+    <p style="max-width:38rem;margin-top:1rem">La même colline vue par satellite en juillet 2011, quelques mois après les premières plantations, puis en février 2025. Glissez pour comparer.</p>
+    <figure class="cmp" style="margin:1.8rem 0 0">
+      <div class="cmp-box" id="cmp" style="--pos:50%">
+        <img src="img/sat_2025b.jpg" alt="Février 2025 : de grands blocs de forêt verte couvrent les parcelles" width="1400" height="1225" loading="lazy">
+        <img class="before" src="img/sat_2011.jpg" alt="Juillet 2011 : la savane, avec le tracé des premières parcelles et des pare-feu" width="1400" height="1225" loading="lazy">
+        <span class="tag l">Juillet 2011</span><span class="tag r">Février 2025</span>
+        <span class="bar" aria-hidden="true"><span class="knob">◂ ▸</span></span>
+        <input type="range" id="cmp-range" min="0" max="100" value="50" step="0.5" aria-label="Comparer juillet 2011 et février 2025">
+      </div>
+      <figcaption class="cap">Imagerie satellite Esri World Imagery : WorldView-2 du 31/07/2011 et WorldView-3 du 01/02/2025 (Vantor). Même cadrage, environ 2 km de large.</figcaption>
+    </figure>
+    <dl class="facts">
+      <div><dt>Coordonnées</dt><dd>21°53'19,91" S – 46°55'22,39" E</dd></div>
+      <div><dt>Accès</dt><dd>Commune de Vohimarina, 12 km à l'est d'Ambalavao</dd></div>
+      <div><dt>Voisins</dt><dd>Réserve communautaire d'Anja, rocher d'Ifandana</dd></div>
+      <div><dt>Eau</dt><dd>À 1 km du fleuve Mananatana</dd></div>
+      <div><dt>Climat</dt><dd>Saison sèche de mai à octobre, 1 200 mm de pluie par an</dd></div>
+      <div><dt>Surface</dt><dd>100 ha plantés</dd></div>
+    </dl>
+    <figure class="map card" style="margin-block:1rem 0">
+      <svg viewBox="0 0 640 400" role="img" aria-labelledby="mapt mapd">
+        <title id="mapt">Schéma de situation de la plantation Alamanga</title>
+        <desc id="mapd">Ambalavao à l'ouest, la piste vers l'Andringitra part vers l'est ; la plantation se trouve à 12 km, à 1 km du fleuve Mananatana, près de la réserve d'Anja et du rocher d'Ifandana.</desc>
+        <!-- RN7 -->
+        <path style="stroke:var(--ink-soft)" d="M70 20 L82 380" stroke-width="3" fill="none"/>
+        <text x="20" y="40" class="soft">RN7</text>
+        <text x="92" y="30" class="soft">↑ Fianarantsoa 68 km</text>
+        <!-- Ambalavao -->
+        <rect style="fill:var(--ink)" x="64" y="128" width="22" height="22"/>
+        <text x="96" y="122">Ambalavao</text>
+        <!-- Piste -->
+        <path style="stroke:var(--laterite)" d="M86 140 C 180 150, 250 175, 330 200 S 470 240, 600 250" stroke-width="2.5" stroke-dasharray="7 5" fill="none"/>
+        <text x="470" y="275" class="soft">piste → Andringitra</text>
+        <text x="190" y="190" class="soft">≈ 12 km</text>
+        <!-- Fleuve -->
+        <path style="stroke:var(--forest)" d="M560 30 C 520 90, 470 110, 440 160 S 400 260, 420 380" stroke-width="2" fill="none" opacity=".75"/>
+        <text x="455" y="80" style="fill:var(--forest)">Mananatana</text>
+        <!-- Plantation -->
+        <rect style="fill:var(--forest)" x="350" y="150" width="58" height="44" opacity=".28"/>
+        <path style="stroke:var(--forest)" d="M356 150v44M366 150v44M376 150v44M386 150v44M396 150v44" stroke-width="1" opacity=".7"/>
+        <circle style="fill:var(--laterite)" cx="379" cy="172" r="7"/>
+        <circle style="stroke:var(--laterite)" cx="379" cy="172" r="14" fill="none" stroke-width="1.5"/>
+        <text x="300" y="132" style="font-weight:500">Plantation Alamanga</text>
+        <text x="300" y="148" class="soft" style="font-size:11px">21°53'19,91" S – 46°55'22,39" E</text>
+        <text x="418" y="210" class="soft" style="font-size:11px">1 km</text>
+        <!-- Ifandana -->
+        <path style="fill:var(--ink-soft)" d="M250 300 l14 -26 l14 26 z"/>
+        <text x="200" y="322">Rocher d'Ifandana</text>
+        <!-- Anja -->
+        <circle style="fill:var(--forest)" cx="140" cy="300" r="16" opacity=".35"/>
+        <text x="96" y="338">Réserve d'Anja</text>
+        <text x="20" y="390" class="soft" style="font-size:11px">Schéma sans échelle, positions indicatives</text>
+      </svg>
+    </figure>
+  </section>
+
+  <section class="wrap" aria-labelledby="modele-t">
+    <div class="model">
+      <div class="rounds" aria-hidden="false">
+        <img class="a" src="img/rucher_proche.jpg" alt="Ruches vertes sous les arbres de la forêt plantée, apiculteurs en tenue" width="1400" height="1050" loading="lazy">
+        <img class="b" src="img/mains.jpg" alt="Une femme plante un jeune arbre dans la terre rouge" width="1000" height="1001" loading="lazy">
+        <img class="c" src="img/germ.jpg" alt="Jeunes pousses en pépinière" width="900" height="900" loading="lazy">
+      </div>
+      <div>
+        <h2 class="t sm" id="modele-t">Notre modèle<span class="g">arbres, ruches, revenus</span></h2>
+        <p class="quote" style="margin-top:1.2rem">Une reforestation ne tient dans le temps que si elle <em>fait vivre ceux qui vivent de la terre.</em></p>
+        <div class="triad">
+          <div><b>Arbres</b><p>Emplois de pépinière, de plantation et d'entretien. Du bois durable, qui évite de couper dans la forêt naturelle voisine.</p></div>
+          <div><b>Ruches</b><p>Des essaims sauvages sont revenus dans la forêt plantée. Le miel est un revenu de plus.</p></div>
+          <div><b>Produits</b><p>Valorisation des produits forestiers : plantes médicinales, huiles essentielles, bois.</p></div>
+        </div>
+        <p class="cap">Photos : rucher dans la forêt, juillet 2025 · mise en terre, janvier 2014 · pépinière, octobre 2013</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="histoire" class="wrap">
+    <h2 class="t">Notre histoire<span class="g">de 2009 à aujourd'hui</span></h2>
+    <ol class="frise">
+      <li><time>sept. 2009</time><p>Marie-Nomena Allimant rentre à Madagascar.</p></li>
+      <li><time>2010</time><p>Création d'Alamanga Reforestation, société de droit malgache.</p></li>
+      <li><time>début 2011</time><p>Premières plantations : environ 12 600 arbres sur 8 ha. Acacia, grevillea, eucalyptus.</p></li>
+      <li><time>nov. 2011</time><p>21 ha plantés. Ajout d'espèces endémiques et utiles : plantes médicinales, huiles essentielles.</p></li>
+      <li><time>2013</time><p>20 ha labourés en un mois. 85 000 arbres plantés, 40 familles bénéficiaires.<small>Chiffres de la plaquette 2013</small></p></li>
+      <li><time>2014 → 2026</time><p>Reboisement des 60 hectares restants. La forêt atteint 100 ha.</p></li>
+      <li><time>juil. 2016</time><p>Ruchers en place dans les parcelles reboisées.</p></li>
+      <li class="now"><time>2026</time><p>Les villages alentour constatent plus de pluie, plus de biodiversité et une meilleure pollinisation de leurs récoltes. Lors des grands événements, comme les messes célébrées en présence de l'évêque, la forêt rassemble tout le monde.</p></li>
+    </ol>
+    <div class="frise-pics">
+      <figure style="margin:0"><img src="img/equipe2025.jpg" alt="L'équipe d'Alamanga debout dans la forêt plantée" width="1400" height="1050" loading="lazy"><figcaption class="cap">L'équipe dans la forêt, juillet 2025</figcaption></figure>
+      <figure style="margin:0"><img src="img/rucher_large.jpg" alt="Rucher clôturé sous les arbres de la forêt plantée, ruches vertes, apiculteurs en tenue" width="1400" height="1050" loading="lazy"><figcaption class="cap">Le rucher sous les arbres de la forêt, juillet 2025</figcaption></figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="mot-t">
+    <div class="wrap">
+      <div class="card letter">
+        <h2 class="t sm" id="mot-t">Un mot<span class="g">de la fondatrice</span></h2>
+        <p><span class="tbc">texte à valider</span></p>
+        <p>Je suis rentrée à Madagascar en septembre 2009. Un an plus tard, je créais Alamanga sur une colline de savane près d'Ambalavao, avec une idée simple : une forêt ne dure que si elle fait vivre les gens qui vivent autour.</p>
+        <p>Depuis, nous avons planté 100 hectares, parcelle par parcelle. Les abeilles sont revenues d'elles-mêmes. C'est un travail de terrain, sans rien de spectaculaire.</p>
+        <p>Quand vous parrainez un arbre, vous financez ce travail-là, dans ce lieu-là. Vous pouvez le trouver sur une carte et recevoir de ses nouvelles.</p>
+        <div class="sig"><img src="img/signature.png" alt="Signature manuscrite" width="197" height="69"><span>Marie-Nomena Allimant, fondatrice</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="parrainer" class="wrap">
+    <div class="par-head">
+      <div>
+        <h2 class="t">Parrainage<span class="g">d'arbres</span></h2>
+        <p style="margin-top:1rem;max-width:32rem">Particuliers et entreprises parrainent des arbres plantés à Vohimarina. Chaque parrainage finance un arbre, de la pépinière à ses trois premières années.</p>
+      </div>
+      <div class="cluster">
+        <img src="img/plant.jpg" alt="Jeune plant dans la terre rouge" width="900" height="900" loading="lazy">
+        <img src="img/lignes.jpg" alt="Jeunes arbres alignés" width="1100" height="1099" loading="lazy">
+        <img src="img/semis.jpg" alt="Semis en sachets de pépinière" width="900" height="1200" loading="lazy">
+      </div>
+    </div>
+
+    <div class="entries">
+      <div class="card">
+        <p class="kicker">Particuliers</p>
+        <h3 class="h3">Pour vous, ou à offrir</h3>
+        <p>Choisissez un nombre d'arbres. Pour un cadeau, ajoutez le nom du destinataire et un message : il figure sur son certificat.</p>
+        <a class="btn solid" href="#form-perso" style="justify-self:start">Parrainer ou offrir</a>
+      </div>
+      <div class="card">
+        <p class="kicker">Entreprises</p>
+        <h3 class="h3">Cadeau client, engagement, communication</h3>
+        <p>Un arbre par client ou par salarié, une parcelle entière, un rendez-vous chaque année.</p>
+        <a class="btn" href="#entreprises" style="justify-self:start">Offre entreprises</a>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card">
+        <h3 class="h3">Ce que finance un arbre</h3>
+        <ul class="ticks">
+          <li>Le plant, élevé dans notre pépinière</li>
+          <li>La préparation du sol et la mise en terre</li>
+          <li>L'entretien pendant les trois premières années</li>
+          <li>Des emplois locaux à chaque étape</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="h3">Ce que vous recevez</h3>
+        <ul class="ticks">
+          <li>Un certificat nominatif avec les coordonnées GPS et le numéro de la parcelle</li>
+          <li>Des nouvelles du terrain avec photos, une fois par an</li>
+          <li>Pour un cadeau : le certificat au nom du destinataire, avec votre message</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:1rem">
+      <h3 class="h3">Tarif dégressif <span class="tbc">grille 2026 à confirmer</span></h3>
+      <div class="legend"><span>Nombre d'arbres</span><span class="p">Prix par arbre</span></div>
+      <div class="prices">
+        <ol>
+          <li><span class="bub n">10</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">5 €<small>/arbre</small></span><span class="tot">50 €</span></li>
+          <li><span class="bub n">100</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">3 €<small>/arbre</small></span><span class="tot">300 €</span></li>
+          <li><span class="bub n">250</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">2,60 €<small>/arbre</small></span><span class="tot">650 €</span></li>
+          <li><span class="bub n">500</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">2 €<small>/arbre</small></span><span class="tot">1 000 €</span></li>
+          <li><span class="bub n">1 000</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">1,50 €<small>/arbre</small></span><span class="tot">1 500 €</span></li>
+          <li><span class="bub n">2 000</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">1,25 €<small>/arbre</small></span><span class="tot">2 500 €</span></li>
+          <li><span class="bub n">10 000</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">1,10 €<small>/arbre</small></span><span class="tot">11 000 €</span></li>
+          <li><span class="bub n">25 000</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">1 €<small>/arbre</small></span><span class="tot">25 000 €</span></li>
+          <li><span class="bub n">50 000</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">0,90 €<small>/arbre</small></span><span class="tot">45 000 €</span></li>
+          <li><span class="bub n">100 000</span><span class="arrow" aria-hidden="true">↓</span><span class="bub p">0,80 €<small>/arbre</small></span><span class="tot">80 000 €</span></li>
+        </ol>
+      </div>
+      <p class="note">Alamanga, société de droit malgache, n'est pas assujettie à la TVA. Le paiement en ligne n'est pas encore ouvert : envoyez votre demande, nous répondons avec le certificat à valider et les modalités de paiement.</p>
+    </div>
+
+    <div id="form-perso" class="card" style="margin-top:1rem">
+      <h3 class="h3">Demande de parrainage</h3>
+      <form class="form" data-kind="perso" novalidate>
+        <fieldset>
+          <legend>Pour qui ?</legend>
+          <label class="radio"><input type="radio" name="pour" id="pour-moi" value="moi" checked> Pour moi</label>
+          <label class="radio"><input type="radio" name="pour" id="pour-offrir" value="offrir"> À offrir</label>
+        </fieldset>
+        <div class="row">
+          <label for="p-nb">Nombre d'arbres
+            <select id="p-nb" name="nb">
+              <option value="10">10 arbres · 50 €</option>
+              <option value="100">100 arbres · 300 €</option>
+              <option value="250">250 arbres · 650 €</option>
+              <option value="autre">Autre quantité</option>
+            </select>
+          </label>
+          <label for="p-autre" class="gift" data-autre hidden>Quantité
+            <input id="p-autre" name="autre" type="number" min="10" step="1" inputmode="numeric" placeholder="ex. 40">
+          </label>
+        </div>
+        <div class="row">
+          <label for="p-nom">Votre nom<input id="p-nom" name="nom" autocomplete="name" required></label>
+          <label for="p-mail">Votre e-mail<input id="p-mail" name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <div class="gift" data-gift hidden>
+          <div class="row">
+            <label for="p-dest">Nom du destinataire<input id="p-dest" name="destinataire"></label>
+            <label for="p-date">Date d'envoi souhaitée<input id="p-date" name="date" type="date"></label>
+          </div>
+          <label for="p-msg" style="margin-top:1rem">Message sur le certificat<textarea id="p-msg" name="message" maxlength="400" placeholder="Quelques lignes pour la personne qui reçoit les arbres"></textarea></label>
+        </div>
+        <p class="estimate" aria-live="polite" data-estimate></p>
+        <button class="btn solid" type="submit" style="justify-self:start">Préparer ma demande</button>
+        <div class="out" data-out hidden></div>
+      </form>
+    </div>
+
+    <aside class="card co2" aria-labelledby="co2-t">
+      <h3 class="h3" id="co2-t">Et le CO<sub>2</sub> ?</h3>
+      <p>Un parrainage est une contribution à la reforestation, pas un crédit carbone certifié. À titre d'estimation moyenne : des mesures de terrain à Madagascar sur des espèces comme l'<i>Acacia mangium</i> donnent environ 6 kg de CO<sub>2</sub> stockés par arbre et par an les cinq premières années, puis 69 à 73 kg par an au-delà, pour un arbre qui survit.</p>
+      <p class="note">Source : Nitidae, projet Mahavotra, « Pré-évaluation de la séquestration de carbone dans la biomasse des espèces plantées », 2014 (valeurs en carbone converties en CO<sub>2</sub>, × 44/12).</p>
+    </aside>
+  </section>
+
+  <section id="entreprises" class="wrap">
+    <div class="ent">
+      <div>
+        <h2 class="t">Pourquoi vous<span class="g">engager ?</span></h2>
+        <p style="margin-top:1rem;max-width:32rem">Soutenir nos plantations, c'est un engagement environnemental et social que vos clients peuvent situer sur une carte. Pas de catalogue de projets : un seul lieu, documenté depuis 2010.</p>
+        <div class="why">
+          <span class="gb">Communication responsable</span>
+          <img src="img/plant.jpg" alt="" width="900" height="900" loading="lazy">
+          <span class="wb">Facteur de différenciation</span>
+          <img src="img/panier.jpg" alt="" width="900" height="899" loading="lazy">
+          <img src="img/apiculteurs.jpg" alt="" width="900" height="1200" loading="lazy">
+          <span class="gb">Cadeau d'entreprise</span>
+          <img src="img/sousbois.jpg" alt="" width="1200" height="800" loading="lazy">
+          <span class="wb">Lutte contre la déforestation et la pauvreté</span>
+          <span class="gb">Impact durable</span>
+          <img src="img/lignes.jpg" alt="" width="1100" height="1099" loading="lazy">
+          <span class="wb">Un lieu précis, géolocalisé</span>
+          <img src="img/mains.jpg" alt="" width="1000" height="1001" loading="lazy">
+        </div>
+      </div>
+      <div class="card">
+        <p class="kicker">Entreprises</p>
+        <h3 class="h3">Prendre contact</h3>
+        <ul class="ticks">
+          <li><b>Cadeau client</b> : un arbre par client, avec un certificat à son nom</li>
+          <li><b>Engagement</b> : une parcelle entière, suivie dans la durée</li>
+          <li><b>Communication</b> : photos datées, certificats, un texte prêt à publier. On parle de contribution à la reforestation.</li>
+        </ul>
+        <form class="form" data-kind="entreprise" novalidate>
+          <div class="row">
+            <label for="e-soc">Entreprise<input id="e-soc" name="entreprise" autocomplete="organization" required></label>
+            <label for="e-nom">Votre nom<input id="e-nom" name="nom" autocomplete="name" required></label>
+          </div>
+          <div class="row">
+            <label for="e-mail">E-mail<input id="e-mail" name="email" type="email" autocomplete="email" required></label>
+            <label for="e-tel">Téléphone<input id="e-tel" name="telephone" type="tel" autocomplete="tel"></label>
+          </div>
+          <div class="row">
+            <label for="e-obj">Objet
+              <select id="e-obj" name="objet">
+                <option>Cadeau clients</option>
+                <option>Engagement RSE / parcelle</option>
+                <option>Communication</option>
+                <option>Autre</option>
+              </select>
+            </label>
+            <label for="e-vol">Volume envisagé<input id="e-vol" name="volume" placeholder="ex. 300 arbres"></label>
+          </div>
+          <label for="e-msg">Votre projet<textarea id="e-msg" name="message" placeholder="Nombre de clients, calendrier, usage prévu"></textarea></label>
+          <button class="btn solid" type="submit" style="justify-self:start">Préparer ma demande</button>
+          <div class="out" data-out hidden></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="miel" class="wrap">
+    <div class="ann">
+      <figure style="margin:0;justify-self:center;width:100%;max-width:24rem"><img class="pic" src="img/rucher_proche.jpg" alt="Ruches vertes posées sous les arbres de la forêt plantée, apiculteurs en tenue blanche" width="1400" height="1050" loading="lazy"><figcaption class="cap" style="text-align:center">Le rucher de la forêt, juillet 2025</figcaption></figure>
+      <div class="prose">
+        <h2 class="t">Le miel<span class="g">de la forêt plantée</span></h2>
+        <p>Quand les arbres ont fleuri, des essaims sauvages sont revenus. Ils ont colonisé 30 ruches installées dans les parcelles. Environ 360 litres de miel par an <span class="tbc">chiffre ancien, à confirmer</span>.</p>
+        <span class="soon">Vente à venir</span>
+        <a class="btn" href="#contact" data-sujet="Miel" style="justify-self:start">Être prévenu</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="accompagnement" class="wrap">
+    <div class="ann">
+      <img class="pic" src="img/bechee.jpg" alt="Un homme marche dans les herbes hautes, une bêche sur l'épaule" width="1200" height="800" loading="lazy">
+      <div class="prose">
+        <h2 class="t">Accompagnement<span class="g">de vos projets</span></h2>
+        <p>Depuis 2010, nous avons appris sur le terrain : choisir et préparer un site, conduire une pépinière, caler la plantation sur les pluies, installer des ruchers. Nous accompagnons les porteurs de projets à Madagascar, sur demande et sur devis. <span class="tbc">contenu à confirmer</span></p>
+        <a class="btn" href="#contact" data-sujet="Accompagnement" style="justify-self:start">En parler</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" aria-labelledby="part-t">
+    <h2 class="t sm" id="part-t">Ils ont travaillé<span class="g">avec nous</span></h2>
+    <div class="partners">
+      <div class="card"><b>BIOTOPE</b><span>Bureau d'étude faune, flore, milieux naturels. Expertise du site d'Ambalavao.</span></div>
+      <div class="card"><b>Silo National des Graines Forestières</b><span>Semences forestières, Madagascar.</span></div>
+      <div class="card"><b>Canopée Expertise</b><span>La Réunion. Un arbre par client et par an depuis 2024.</span></div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <h2 class="t">Nous<span class="g">écrire</span></h2>
+    <div class="contact" style="margin-top:1.5rem">
+      <div class="card direct">
+        <div><span class="kicker">E-mail</span><span class="v">contact@alamanga.fr</span><button class="copy" type="button" data-copy="contact@alamanga.fr">Copier</button></div>
+        <div><span class="kicker">Téléphone</span><span class="v">+262 693 40 04 59</span><button class="copy" type="button" data-copy="+262693400459">Copier</button></div>
+        <div><span class="kicker">La forêt</span><span>Commune de Vohimarina, Ambalavao, Madagascar</span></div>
+      </div>
+      <div class="card">
+        <form class="form" data-kind="contact" novalidate style="margin-top:0">
+          <div class="row">
+            <label for="c-nom">Votre nom<input id="c-nom" name="nom" autocomplete="name" required></label>
+            <label for="c-mail">Votre e-mail<input id="c-mail" name="email" type="email" autocomplete="email" required></label>
+          </div>
+          <label for="c-sujet">Sujet
+            <select id="c-sujet" name="sujet">
+              <option>Parrainage</option>
+              <option>Miel</option>
+              <option>Accompagnement</option>
+              <option>Autre</option>
+            </select>
+          </label>
+          <label for="c-msg">Message<textarea id="c-msg" name="message" required></textarea></label>
+          <button class="btn solid" type="submit" style="justify-self:start">Préparer mon message</button>
+          <div class="out" data-out hidden></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="logo" src="img/logo.png" alt="Alamanga reforestation" width="600" height="261">
+    <p><a href="#contact">contact@alamanga.fr</a> · +262 693 40 04 59</p>
+    <p>Alamanga Reforestation, SARL unipersonnelle de droit malgache. Siège : Lot II M 35 R Ter, Androhibe, Antananarivo 101, Madagascar. RC 2010 B 00164 · NIF 63401813.</p>
+    <p>Les parrainages ne sont pas des dons. Ils n'ouvrent droit à aucune réduction d'impôt. Ce site n'enregistre aucune donnée : vos demandes partent depuis votre propre messagerie.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  var MAIL='contact@alamanga.fr', WA='262693400459';
+  var PRIX=[[100000,.8],[50000,.9],[25000,1],[10000,1.1],[2000,1.25],[1000,1.5],[500,2],[250,2.6],[100,3],[10,5]];
+  function unit(n){for(var i=0;i<PRIX.length;i++){if(n>=PRIX[i][0])return PRIX[i][1]}return null}
+  function eur(x){return x.toLocaleString('fr-FR',{minimumFractionDigits:x%1?2:0,maximumFractionDigits:2})+' €'}
+
+  // Formulaire particulier : cadeau, quantité libre, estimation
+  var fp=document.querySelector('form[data-kind="perso"]');
+  if(fp){
+    var gift=fp.querySelector('[data-gift]'), autreW=fp.querySelector('[data-autre]'), est=fp.querySelector('[data-estimate]');
+    function nb(){var s=fp.nb.value;return s==='autre'?parseInt(fp.autre.value,10)||0:parseInt(s,10)}
+    function upd(){
+      gift.hidden=!fp.querySelector('#pour-offrir').checked;
+      autreW.hidden=fp.nb.value!=='autre';
+      var n=nb(),u=unit(n);
+      est.textContent=(n>=10&&u)?(n.toLocaleString('fr-FR')+' arbres × '+eur(u)+' = '+eur(Math.round(n*u*100)/100)+' (tarif à confirmer)'):(fp.nb.value==='autre'?'Minimum 10 arbres.':'');
+    }
+    fp.addEventListener('input',upd);fp.addEventListener('change',upd);upd();
+  }
+
+  function compose(f){
+    var k=f.dataset.kind, d=new FormData(f), L=[];
+    function v(n){return (d.get(n)||'').toString().trim()}
+    if(k==='perso'){
+      var n=v('nb')==='autre'?v('autre'):v('nb');
+      L.push('Demande de parrainage Alamanga','',
+        'Pour : '+(v('pour')==='offrir'?'offrir':'moi'),
+        'Nombre d’arbres : '+n,
+        'Nom : '+v('nom'),'E-mail : '+v('email'));
+      if(v('pour')==='offrir'){L.push('Destinataire : '+v('destinataire'));if(v('date'))L.push('Date souhaitée : '+v('date'));if(v('message'))L.push('Message pour le certificat : '+v('message'))}
+      return {sujet:'Parrainage : '+n+' arbres',texte:L.join('\n')};
+    }
+    if(k==='entreprise'){
+      L.push('Demande entreprise Alamanga','','Entreprise : '+v('entreprise'),'Contact : '+v('nom'),'E-mail : '+v('email'));
+      if(v('telephone'))L.push('Téléphone : '+v('telephone'));
+      L.push('Objet : '+v('objet'));if(v('volume'))L.push('Volume : '+v('volume'));if(v('message'))L.push('','Projet : '+v('message'));
+      return {sujet:'Entreprise : '+v('entreprise'),texte:L.join('\n')};
+    }
+    L.push('Message Alamanga ('+v('sujet')+')','','Nom : '+v('nom'),'E-mail : '+v('email'),'',v('message'));
+    return {sujet:v('sujet')+' : '+v('nom'),texte:L.join('\n')};
+  }
+
+  function copyText(t,btn){
+    var done=function(){var o=btn.textContent;btn.textContent='Copié';setTimeout(function(){btn.textContent=o},1600)};
+    try{navigator.clipboard.writeText(t).then(done,function(){sel(btn)})}catch(e){sel(btn)}
+  }
+  function sel(btn){var p=btn.parentNode.querySelector('pre,.v');if(!p)return;var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Texte sélectionné'}
+
+  document.querySelectorAll('form.form').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var bad=[].slice.call(f.querySelectorAll('[required]')).filter(function(i){return !i.value.trim()||(i.type==='email'&&!/^\S+@\S+\.\S+$/.test(i.value))});
+      if(f.dataset.kind==='perso'&&f.nb.value==='autre'&&!(parseInt(f.autre.value,10)>=10))bad.push(f.autre);
+      if(bad.length){bad[0].focus();var o=f.querySelector('[data-out]');o.hidden=false;o.innerHTML='<p>Complétez les champs : '+bad.map(function(i){return i.closest('label').firstChild.textContent.trim()}).join(', ')+'.</p>';return}
+      var m=compose(f), out=f.querySelector('[data-out]');
+      out.hidden=false;out.innerHTML='';
+      var p=document.createElement('p');p.textContent='Votre demande est prête. Envoyez-la par WhatsApp ou par e-mail à '+MAIL+'.';
+      var pre=document.createElement('pre');pre.textContent=m.texte;
+      var b=document.createElement('div');b.className='btns';b.style.marginTop='0';
+      var wa=document.createElement('a');wa.className='btn solid';wa.href='https://wa.me/'+WA+'?text='+encodeURIComponent(m.texte);wa.target='_blank';wa.rel='noopener';wa.textContent='Envoyer par WhatsApp';
+      var ml=document.createElement('a');ml.className='btn';ml.href='mailto:'+MAIL+'?subject='+encodeURIComponent(m.sujet)+'&body='+encodeURIComponent(m.texte);ml.textContent='Ouvrir ma messagerie';
+      var cp=document.createElement('button');cp.type='button';cp.className='btn';cp.textContent='Copier le texte';cp.addEventListener('click',function(){copyText(m.texte,cp)});
+      b.append(wa,ml,cp);
+      var hint=document.createElement('p');hint.className='note';hint.style.margin='0';hint.textContent='Si votre messagerie ne s’ouvre pas, copiez le texte et envoyez-le à '+MAIL+'.';
+      out.append(p,pre,b,hint);
+      out.scrollIntoView({block:'nearest',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    });
+  });
+
+
+  var cmp=document.getElementById('cmp'),cr=document.getElementById('cmp-range');
+  if(cmp&&cr){var f=function(){cmp.style.setProperty('--pos',cr.value+'%')};cr.addEventListener('input',f);f();}
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){copyText(b.dataset.copy,b)})});
+  document.querySelectorAll('a[data-sujet]').forEach(function(a){a.addEventListener('click',function(){var s=document.getElementById('c-sujet');if(s)s.value=a.dataset.sujet})});
+})();
+</script>
+
+</body></html>
