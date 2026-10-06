@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alamanga.fr/sitemap.xml
