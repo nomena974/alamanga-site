@@ -427,7 +427,7 @@ footer a{color:var(--leaf);font-weight:600;text-decoration:none}
     </div>
 
     <div class="card" style="margin-top:1rem">
-      <h3 class="h3">Tarif dégressif <span class="tbc">grille 2026 à confirmer</span></h3>
+      <h3 class="h3">Tarif dégressif</h3>
       <div class="legend"><span>Nombre d'arbres</span><span class="p">Prix par arbre</span></div>
       <div class="prices">
         <ol>
@@ -552,7 +552,7 @@ footer a{color:var(--leaf);font-weight:600;text-decoration:none}
       <figure style="margin:0;justify-self:center;width:100%;max-width:24rem"><img class="pic" src="img/rucher_proche.jpg" alt="Ruches vertes posées sous les arbres de la forêt plantée, apiculteurs en tenue blanche" width="1400" height="1050" loading="lazy"><figcaption class="cap" style="text-align:center">Le rucher de la forêt, juillet 2025</figcaption></figure>
       <div class="prose">
         <h2 class="t">Le miel<span class="g">de la forêt plantée</span></h2>
-        <p>Quand les arbres ont fleuri, des essaims sauvages sont revenus. Ils ont colonisé 30 ruches installées dans les parcelles. Environ 360 litres de miel par an <span class="tbc">chiffre ancien, à confirmer</span>.</p>
+        <p>Quand les arbres ont fleuri, des essaims sauvages sont revenus. Ils ont colonisé 30 ruches installées dans les parcelles. Environ 360 litres de miel par an.</p>
         <span class="soon">Vente à venir</span>
         <a class="btn" href="#contact" data-sujet="Miel" style="justify-self:start">Être prévenu</a>
       </div>
@@ -564,7 +564,7 @@ footer a{color:var(--leaf);font-weight:600;text-decoration:none}
       <img class="pic" src="img/bechee.jpg" alt="Un homme marche dans les herbes hautes, une bêche sur l'épaule" width="1200" height="800" loading="lazy">
       <div class="prose">
         <h2 class="t">Accompagnement<span class="g">de vos projets</span></h2>
-        <p>Depuis 2010, nous avons appris sur le terrain : choisir et préparer un site, conduire une pépinière, caler la plantation sur les pluies, installer des ruchers. Nous accompagnons les porteurs de projets à Madagascar, sur demande et sur devis. <span class="tbc">contenu à confirmer</span></p>
+        <p>Depuis 2010, nous avons appris sur le terrain : choisir et préparer un site, conduire une pépinière, caler la plantation sur les pluies, installer des ruchers. Nous accompagnons les porteurs de projets à Madagascar, sur demande et sur devis.</p>
         <a class="btn" href="#contact" data-sujet="Accompagnement" style="justify-self:start">En parler</a>
       </div>
     </div>
@@ -634,7 +634,7 @@ footer a{color:var(--leaf);font-weight:600;text-decoration:none}
       gift.hidden=!fp.querySelector('#pour-offrir').checked;
       autreW.hidden=fp.nb.value!=='autre';
       var n=nb(),u=unit(n);
-      est.textContent=(n>=10&&u)?(n.toLocaleString('fr-FR')+' arbres × '+eur(u)+' = '+eur(Math.round(n*u*100)/100)+' (tarif à confirmer)'):(fp.nb.value==='autre'?'Minimum 10 arbres.':'');
+      est.textContent=(n>=10&&u)?(n.toLocaleString('fr-FR')+' arbres × '+eur(u)+' = '+eur(Math.round(n*u*100)/100)):(fp.nb.value==='autre'?'Minimum 10 arbres.':'');
     }
     fp.addEventListener('input',upd);fp.addEventListener('change',upd);upd();
   }
